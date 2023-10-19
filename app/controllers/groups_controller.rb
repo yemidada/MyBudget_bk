@@ -3,7 +3,7 @@ class GroupsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @groups = Group.all()
+    @groups = Group.all
   end
 
   def show
@@ -16,9 +16,9 @@ class GroupsController < ApplicationController
 
   def create
     @group = Group.new(recipe_params)
-    @group.user_id = current_user.id
+
     if @group.save
-      redirect_to root_path, notice: "Add new group"
+      redirect_to root_path, notice: 'Add new group'
     else
       render :new
     end
@@ -27,7 +27,7 @@ class GroupsController < ApplicationController
   def destroy
     @group = Group.find(params[:id])
     @group.destroy
-    redirect_to root_path, notice: "Group was successfully deleted."
+    redirect_to root_path, notice: 'Group was successfully deleted.'
   end
 
   private

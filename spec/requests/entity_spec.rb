@@ -1,27 +1,18 @@
 require 'rails_helper'
 RSpec.describe 'Entity', type: :request do
   let(:user) { User.create(name: 'Ola', email: 'test@test.com', password: 'password') }
+  let(:group) do
+    file = File.open(Rails.root.join('spec', 'fixtures', 'files', 'example.txt'))
+    Group.create(name: 'Salary', icon: file)
+  end
   let(:entity) do
-    Entity.new(authorId: user.id, name: 'Indomine', amount: 10)
-  end
-  describe 'GET /foods' do
-    before :each do
-      sign_in user
-      get foods_path
-    end
-    it 'returns http success' do
-      expect(response).to have_http_status(:success)
-    end
-
-    it 'should render the correct template' do
-      expect(response).to render_template(:index)
-    end
+    Entity.create(author_id: user.id, name: 'Indomine', amount: 10, group_id: group.id)
   end
 
-  describe 'GET /foods/new' do
+  describe 'GET /entities/new' do
     before :each do
       sign_in user
-      get new_food_path
+      get new_entity_path
     end
     it 'should returns http success' do
       expect(response).to have_http_status(:success)

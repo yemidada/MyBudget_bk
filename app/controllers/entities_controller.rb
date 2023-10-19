@@ -3,7 +3,7 @@ class EntitiesController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @entities = Entity.all()
+    @entities = Entity.all
   end
 
   def show
@@ -15,14 +15,10 @@ class EntitiesController < ApplicationController
   end
 
   def create
-
-    puts params
-    puts "-------------------------------"
-
     @entity = Entity.new(entity_params)
     @entity.author_id = current_user.id
     if @entity.save
-      redirect_to entities_path(@entity.group_id), notice: "Add new transaction"
+      redirect_to entities_path(@entity.group_id), notice: 'Add new transaction'
     else
       render :new
     end
@@ -31,7 +27,7 @@ class EntitiesController < ApplicationController
   def destroy
     @entity = Entity.find(params[:id])
     @entity.destroy
-    redirect_to entities_path, notice: "Transaction was successfully deleted."
+    redirect_to entities_path, notice: 'Transaction was successfully deleted.'
   end
 
   private

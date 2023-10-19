@@ -43,11 +43,5 @@
   <div class="field">
     <%= f.number_field :amount, autofocus: true, autocomplete: "amount", placeholder: "Amount" %>
   </div>
-
-  <div class="field">
-    <%= f.label :selected_entities, 'Select Category:' %><br/>
-    <%= f.collection_select(:selected_entities, Group.all, :id, :name, {}, multiple: true, placeholder: "Amount") %>
-  </div>
-
 </section>
 <% end %>
