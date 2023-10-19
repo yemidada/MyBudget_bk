@@ -46,7 +46,6 @@
 - **Document and explain coding decisions for architectural choices.**
 
 
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
