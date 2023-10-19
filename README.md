@@ -26,24 +26,24 @@
 
 # 📖 Capstone Project - MyBudget <a name="about-project"></a>
 
-**Write integration tests with Capybara gem.** 
-**SUtilize Ruby gems as a package management system.**
-**Install the Ruby on Rails framework.**
-**Grasp the principles of Rails' RESTful design and routing.**
-**Employ controllers to handle HTTP requests and render views.**
-**Safely handle and process parameters from browser requests.**
-**Create views using preprocessed HTML files with embedded Ruby code.**
-**Utilize layouts and templates for shared content and consistent design.**
-**Manage database schema through migration files.**
-**Implement data validation for models to maintain data integrity.**
-**Mitigate performance issues, such as the N+1 query problem.**
-**Understand the concept of Object-Relational Mapping (ORM).**
-**Write SQL queries using ActiveRecord for database operations.**
-**Establish associations between different data models.**
-**Develop a web application with user authentication requirements.**
-**Implement authentication using the Devise gem.**
-**Control access to web application resources based on authorization rules.**
-**Document and explain coding decisions for architectural choices.**
+- **Write integration tests with Capybara gem.**
+- **Utilize Ruby gems as a package management system.**
+- **Install the Ruby on Rails framework.**
+- **Grasp the principles of Rails' RESTful design and routing.**
+- **Employ controllers to handle HTTP requests and render views.**
+- **Safely handle and process parameters from browser requests.**
+- **Create views using preprocessed HTML files with embedded Ruby code.**
+- **Utilize layouts and templates for shared content and consistent design.**
+- **Manage database schema through migration files.**
+- **Implement data validation for models to maintain data integrity.**
+- **Mitigate performance issues, such as the N+1 query problem.**
+- **Understand the concept of Object-Relational Mapping (ORM).**
+- **Write SQL queries using ActiveRecord for database operations.**
+- **Establish associations between different data models.**
+- **Develop a web application with user authentication requirements.**
+- **Implement authentication using the Devise gem.**
+- **Control access to web application resources based on authorization rules.**
+- **Document and explain coding decisions for architectural choices.**
 
 
 
@@ -102,10 +102,10 @@ Clone this repository to your desired folder:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/yemidada/blog-app.git
+$ git clone https://github.com/yemidada/MyBudget.git
 
 # Go into the repository
-$ cd blog-app
+$ cd MyBudget
 
 # Install dependencies
 $ bundle install
@@ -144,7 +144,7 @@ After you clone this repo to your desktop and install the dependencies, go to it
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/yemidada/blog-app/issues).
+Feel free to check the [issues page](https://github.com/yemidada/MyBudget/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
